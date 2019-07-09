@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MineVC.swift
 //  TodayNews
 //
 //  Created by shi_mhua on 2019/7/9.
@@ -8,14 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MineVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.white
+    }
+    
     
 
 }
-
