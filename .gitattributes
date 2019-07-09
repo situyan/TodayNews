@@ -1,0 +1,37 @@
+# Telling GIT that Xcode pbxproj remote and local files
+# should be merged using union of differences
+*.pbxproj binary merge=union
+
+# OS X Finder
+.DS_Store
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+UserInterfaceState.xcuserstate
+xcuserdata
+
+# Build products
+/build/
+build
+*.o
+*.LinkFileList
+*.hmap
+profile
+*.moved-aside
+DerivedData/
+*/DerivedData
+.idea/
+*.orig
+Carthage/Checkouts/
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
