@@ -9,6 +9,9 @@
 import Foundation
 import SwiftTheme
 
+/// 记录主题模式
+let isNight = "isNight"
+
 enum MyTheme: Int {
     /// 白天标识
     case day = 0

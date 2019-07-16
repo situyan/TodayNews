@@ -8,6 +8,7 @@
 
 import UIKit
 import IBAnimatable
+import SwiftTheme
 
 /// headerView高度
 let kMyHeaderViewHeight: CGFloat = 280
@@ -45,6 +46,31 @@ class NoLoginHeaderView: UIView, NibLoadable {
     
     /// 点击了日间 夜间按钮
     @IBAction func dayOrNightButtonClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        MyTheme.switchNight(sender.isSelected)
+        UserDefaults.standard.set(sender.isSelected, forKey: isNight)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "dayOrNightButtonClicked"), object: sender.isSelected)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
+        /// 设置主题
+//        ThemeManager.setTheme(plistName: "default_theme", path: .mainBundle)
+        mobileButton.theme_setImage("images.mobileButton", forState: .normal)
+        wechatButton.theme_setImage("images.wechatButton", forState: .normal)
+        qqButton.theme_setImage("images.qqButton", forState: .normal)
+        sinaButton.theme_setImage("images.sinaButton", forState: .normal)
+        favoriteButton.theme_setImage("images.favoriteButton", forState: .normal)
+        historyButton.theme_setImage("images.historyButton", forState: .normal)
+        dayOrNightButton.theme_setImage("images.dayOrNightButton", forState: .normal)
+        dayOrNightButton.setTitle("日间", for: .normal)
+        dayOrNightButton.setTitle("夜间", for: .selected)
+        moreLoginButton.theme_backgroundColor = "colors.moreLoginButton"
+        moreLoginButton.theme_setTitleColor("colors.moreLoginText", forState: .normal)
+        favoriteButton.theme_setTitleColor("colors.black", forState: .normal)
+        historyButton.theme_setTitleColor("colors.black", forState: .normal)
+        dayOrNightButton.theme_setTitleColor("colors.black", forState: .normal)
+        bottomView.theme_backgroundColor = "colors.cellBackgroundColor"
     }
 }

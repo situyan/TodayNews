@@ -120,12 +120,12 @@ extension MineVC {
     
     // MARK: UITableViewDelegate
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 0 ? 0 : 10
+        return section == 1 ? 0 : 10
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 10))
-        headerView.backgroundColor = DefaultColor
+        headerView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return headerView
     }
     

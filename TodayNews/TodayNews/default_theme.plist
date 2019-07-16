@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<dict>
+		<key>tabbarTintColor</key>
+		<string>#f55a5d</string>
+		<key>tableViewBackgroundColor</key>
+		<string>#f6f6f6</string>
+		<key>globalRedColor</key>
+		<string>#e6645f</string>
+		<key>separatorViewColor</key>
+		<string>#f0f0f0</string>
+		<key>cellRightTextColor</key>
+		<string>#aaaaaa</string>
+		<key>cellBackgroundColor</key>
+		<string>#ffffff</string>
+		<key>moreLoginButton</key>
+		<string>#252525</string>
+		<key>moreLoginText</key>
+		<string>#707070</string>
+		<key>black</key>
+		<string>#707070</string>
+	</dict>
+	<key>images</key>
+	<dict>
+		<key>cellRightArrow</key>
+		<string>setting_rightarrow_night_8x14_</string>
+		<key>mobileButton</key>
+		<string>cellphoneicon_login_profile_66x66_</string>
+		<key>wechatButton</key>
+		<string>weixinicon_login_profile_66x66_</string>
+		<key>qqButton</key>
+		<string>qqicon_login_profile_66x66_</string>
+		<key>sinaButton</key>
+		<string>sinaicon_login_profile_66x66_</string>
+		<key>favoriteButton</key>
+		<string>favoriteicon_profile_24x24_</string>
+		<key>historyButton</key>
+		<string>history_profile_24x24_</string>
+		<key>dayOrNightButton</key>
+		<string>dayicon_profile_night_24x24_</string>
+	</dict>
+</dict>
+</plist>

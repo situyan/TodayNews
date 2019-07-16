@@ -25,6 +25,11 @@ class MyConcernCollectionViewCell: UICollectionViewCell, RegisterCellOrNib {
         tipsButton.layer.masksToBounds = true
         tipsButton.layer.borderWidth = 1.0
         tipsButton.layer.borderColor = UIColor.white.cgColor
+        
+        tipsButton.layer.theme_borderColor = "colors.cellBackgroundColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        tipsButton.theme_backgroundColor = "colors.globalRedColor"
+        nameLabel.theme_textColor = "colors.black"
     }
 
     var myConcern = MyConcern() {

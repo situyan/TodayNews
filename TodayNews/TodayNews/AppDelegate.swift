@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftTheme
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabbarVC: BaseTabBarController = BaseTabBarController()
         self.window?.rootViewController = tabbarVC
         self.window?.makeKeyAndVisible()
+        
+        /// 设置主题颜色
+        ThemeManager.setTheme(plistName: UserDefaults.standard.bool(forKey: isNight) ? "night_theme" : "default_theme", path: .mainBundle)
         
         return true
     }

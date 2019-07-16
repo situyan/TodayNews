@@ -12,6 +12,8 @@
 		9605C69222DDA39F0094294D /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605C69122DDA39F0094294D /* NoLoginHeaderView.swift */; };
 		9605C69422DDA3AA0094294D /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9605C69322DDA3AA0094294D /* NoLoginHeaderView.xib */; };
 		9605C69822DDD4490094294D /* SwiftTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605C69722DDD4490094294D /* SwiftTheme.swift */; };
+		9605C69B22DDD8200094294D /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9605C69A22DDD8200094294D /* default_theme.plist */; };
+		9605C69D22DDD82C0094294D /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9605C69C22DDD82C0094294D /* night_theme.plist */; };
 		9660809322D825B3000EEB1A /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660809222D825B3000EEB1A /* NetworkTool.swift */; };
 		9660809522D82BA4000EEB1A /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660809422D82BA4000EEB1A /* MyCellModel.swift */; };
 		968FCDE822D6DFA000B9033C /* HandyJSONTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968FCDE722D6DFA000B9033C /* HandyJSONTestVC.swift */; };
@@ -47,6 +49,8 @@
 		9605C69122DDA39F0094294D /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		9605C69322DDA3AA0094294D /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		9605C69722DDD4490094294D /* SwiftTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTheme.swift; sourceTree = "<group>"; };
+		9605C69A22DDD8200094294D /* default_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
+		9605C69C22DDD82C0094294D /* night_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
 		9660809222D825B3000EEB1A /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		9660809422D82BA4000EEB1A /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
 		968FCDE722D6DFA000B9033C /* HandyJSONTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJSONTestVC.swift; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 				AD585A7C6750E3AC8C9D9583 /* Pods-TodayNews.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9605C69922DDD7ED0094294D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				9605C69A22DDD8200094294D /* default_theme.plist */,
+				9605C69C22DDD82C0094294D /* night_theme.plist */,
+			);
+			name = Theme;
 			sourceTree = "<group>";
 		};
 		96A1EE0A22D5BFFD0090A15E /* View */ = {
@@ -315,6 +328,7 @@
 		96E01BAC22D4A2C00050CCAF /* Support files */ = {
 			isa = PBXGroup;
 			children = (
+				9605C69922DDD7ED0094294D /* Theme */,
 				96E01B8022D49A2E0050CCAF /* Main.storyboard */,
 				96E01B8322D49A2F0050CCAF /* Assets.xcassets */,
 				96E01B8522D49A2F0050CCAF /* LaunchScreen.storyboard */,
@@ -404,7 +418,9 @@
 				96E01B8422D49A2F0050CCAF /* Assets.xcassets in Resources */,
 				96FC150522DC18CD00A37808 /* MineTableViewCell.xib in Resources */,
 				9605C68F22DD5FA00094294D /* MyConcernCollectionViewCell.xib in Resources */,
+				9605C69B22DDD8200094294D /* default_theme.plist in Resources */,
 				96FC150922DC298F00A37808 /* MineFirstTableViewCell.xib in Resources */,
+				9605C69D22DDD82C0094294D /* night_theme.plist in Resources */,
 				96E01B8222D49A2E0050CCAF /* Main.storyboard in Resources */,
 				9605C69422DDA3AA0094294D /* NoLoginHeaderView.xib in Resources */,
 			);

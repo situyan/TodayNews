@@ -15,6 +15,9 @@ class MineFirstTableViewCell: UITableViewCell, RegisterCellOrNib {
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var rightImageView: UIImageView!
     @IBOutlet weak var concernCollectionView: UICollectionView!
+    @IBOutlet weak var topView: UIView!
+    /// 分割线
+    @IBOutlet weak var separatorView: UIView!
     ///点击Cell事件闭包
     var myConcernSelected: ((_ myConcern: MyConcern) -> ())?
     
@@ -45,6 +48,15 @@ class MineFirstTableViewCell: UITableViewCell, RegisterCellOrNib {
         concernCollectionView.delegate = self
         concernCollectionView.dataSource = self
         concernCollectionView.cs_registerCell(cell: MyConcernCollectionViewCell.self)
+        
+        /// 设置主题
+        titleLabel.theme_textColor = "colors.black"
+        subTitleLabel.theme_textColor = "colors.cellRightTextColor"
+        rightImageView.theme_image = "images.cellRightArrow"
+        separatorView.theme_backgroundColor = "colors.separatorViewColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        topView.theme_backgroundColor = "colors.cellBackgroundColor"
+        concernCollectionView.theme_backgroundColor = "colors.cellBackgroundColor"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
