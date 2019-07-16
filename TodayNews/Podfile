@@ -1,5 +1,8 @@
 platform :ios, '9.0'
 
+#pod update升级库快速命令
+#pod update --no-repo-update
+
 target 'TodayNews' do
 
   use_frameworks!
@@ -8,6 +11,7 @@ inhibit_all_warnings!
 pod 'Moya'
 pod 'Alamofire'
 pod 'SnapKit'
+pod 'SwiftyJSON'
 pod 'HandyJSON'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
@@ -17,5 +21,16 @@ pod 'EmptyDataSet-Swift'
 pod 'SQLite.swift'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'IBAnimatable'
+pod 'SwiftTheme'
+
+#ShareSDK集成， Swift桥接OC
+# 主模块(必须)
+pod 'mob_sharesdk'
+# 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
+# pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
 
 end

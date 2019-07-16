@@ -16,7 +16,7 @@ class BaseTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         self.tabBar.isTranslucent = false
         let tabbar = UITabBar.appearance()
-        tabbar.tintColor = RGBColor(r: 245, g: 90, b: 93)
+        tabbar.tintColor = UIColor(r: 245, g: 90, b: 93)
         
         initialVC()
     }
@@ -27,6 +27,8 @@ class BaseTabBarController: UITabBarController {
         self.addChildVC(WatermelonVideoVC(), title: "视频", image: UIImage(named: "video_tabbar_32x32_"), selectedImage: UIImage(named: "video_tabbar_press_32x32_"))
         self.addChildVC(ShortVideoVC(), title: "小视频", image: UIImage(named: "huoshan_tabbar_32x32_"), selectedImage: UIImage(named: "huoshan_tabbar_press_32x32_"))
         self.addChildVC(MineVC(), title: "我的", image: UIImage(named: "mine_tabbar_32x32_"), selectedImage: UIImage(named: "mine_tabbar_press_32x32_"))
+        
+        setValue(BaseTabBar(), forKey: "tabBar")
     }
     
     func addChildVC(_ childVC: UIViewController, title: String?, image: UIImage?, selectedImage: UIImage?) {

@@ -28,15 +28,30 @@ let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 // 系统版本
 let IOS_VERSION = Float(UIDevice.current.systemVersion)
-//颜色值
-public func RGBColor(r red:CGFloat, g green:CGFloat, b blue:CGFloat) -> UIColor {
-    return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
-}
 
-//@available(iOS 10.0, *)  if #available(iOS 10.0, *)
-public func RGBColor(r red:CGFloat, g green:CGFloat, b blue:CGFloat, a alpha:CGFloat) -> UIColor {
-    return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+//颜色值
+extension UIColor {
+    convenience init(r red:CGFloat, g green:CGFloat, b blue:CGFloat, a alpha: CGFloat = 1.0) {
+        if #available(iOS 10.0, *) {
+            self.init(displayP3Red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha) //该方法能提升性能
+        } else {
+            self.init(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
+        }
+    }
 }
+/// 默认颜色值
+let DefaultColor = UIColor(r: 247, g: 247, b: 247)
+
+
+//
+//public func RGBColor(r red:CGFloat, g green:CGFloat, b blue:CGFloat) -> UIColor {
+//    return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+//}
+//
+////@available(iOS 10.0, *)  if #available(iOS 10.0, *)
+//public func RGBColor(r red:CGFloat, g green:CGFloat, b blue:CGFloat, a alpha:CGFloat) -> UIColor {
+//    return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1.0)
+//}
 
 
 /**
@@ -59,8 +74,15 @@ let HeightRatio = ((SCREEN_HEIGHT <= 736.0 ? SCREEN_HEIGHT : (SCREEN_HEIGHT == 8
 let WidthRatio = SCREEN_WIDTH / 375.0
 
 
-/// 全局函数自定义输出
-func DPrint<T>(message:T, file: String = #file , _ line: Int = #line) {
+/// 全局函数自定义输出  优化性能
+//func DPrint(_ item: @autoclosure () -> Any) {
+//    //https://www.jianshu.com/p/ba7701fa194a
+//    #if DEBUG
+//    print(item())
+//    #endif
+//}
+// 使用DPrint好处之一： 系统的print打印需要表达式或值为非可选类型，所有会有烦人的警告，消除需要 as 或 ， 而DPrint没有
+func DPrint<T>(_ message: T, file: String = #file , line: Int = #line) {
     //https://www.jianshu.com/p/e7219f0f5ac7
     //如果DEBUG存在，就说明是在项目调试下运行程序
     #if DEBUG
