@@ -22,9 +22,15 @@
 		<string>#ffffff</string>
 		<key>black</key>
 		<string>#707070</string>
+		<key>navigationBarTintColor</key>
+		<string>#707070</string>
 	</dict>
 	<key>images</key>
 	<dict>
+		<key>tabbarCenterButtonPress</key>
+		<string>feed_publish_press_night_44x44_</string>
+		<key>tabbarCenterButton </key>
+		<string>feed_publish_night_44x44_</string>
 		<key>cellRightArrow</key>
 		<string>setting_rightarrow_8x14_</string>
 		<key>mobileButton</key>

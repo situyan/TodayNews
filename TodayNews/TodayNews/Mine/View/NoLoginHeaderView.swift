@@ -43,6 +43,7 @@ class NoLoginHeaderView: UIView, NibLoadable {
     @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var bgImageViewConstraintTopY: NSLayoutConstraint!
     
     /// 点击了日间 夜间按钮
     @IBAction func dayOrNightButtonClicked(_ sender: UIButton) {
@@ -54,6 +55,7 @@ class NoLoginHeaderView: UIView, NibLoadable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        bgImageViewConstraintTopY.constant = -20 - MoreNavigationBarHeight
         
         /// 设置主题
 //        ThemeManager.setTheme(plistName: "default_theme", path: .mainBundle)

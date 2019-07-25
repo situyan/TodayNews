@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BaseNavigationController: UINavigationController, UINavigationControllerDelegate {
     
@@ -38,6 +39,11 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        /// 获取全局的navigationBar
+        let navigationBar = UINavigationBar.appearance()
+        /// 调整导航栏的日间夜间主题色
+        navigationBar.theme_barTintColor = "colors.cellBackgroundColor"
+        navigationBar.theme_tintColor = "colors.navigationBarTintColor"
         
         //记录系统手势代理
         self.popGesture = self.interactivePopGestureRecognizer
@@ -48,10 +54,16 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
     //MARK: - 隐藏标签栏TabBar
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "lefterbackicon_titlebar_24x24_"), style: .plain, target: self, action: #selector(backPreviousPageClicked))
             //            viewController.hidesBottomBarWhenPushed = true;
             //            print("--------->>>>>>>")
         }
         super.pushViewController(viewController, animated: animated)
+    }
+    
+    @objc func backPreviousPageClicked() {
+        popViewController(animated: true)
     }
     
     //MARK: - UINavigationControllerDelegate

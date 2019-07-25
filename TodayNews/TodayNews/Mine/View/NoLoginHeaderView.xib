@@ -86,22 +86,25 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7QN-mN-FKV">
-                    <rect key="frame" x="0.0" y="51" width="432" height="66"/>
+                    <rect key="frame" x="15" y="34.5" width="402" height="82.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQf-im-oCb">
-                            <rect key="frame" x="0.0" y="0.0" width="90" height="66"/>
+                            <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qQf-im-oCb" secondAttribute="height" multiplier="1:1" id="XEf-8x-W7E"/>
+                            </constraints>
                             <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTW-ET-XrY">
-                            <rect key="frame" x="114" y="0.0" width="90" height="66"/>
+                            <rect key="frame" x="106.5" y="0.0" width="82.5" height="82.5"/>
                             <state key="normal" image="weixinicon_login_profile_66x66_"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB7-AO-4uh">
-                            <rect key="frame" x="228" y="0.0" width="90" height="66"/>
+                            <rect key="frame" x="213" y="0.0" width="82.5" height="82.5"/>
                             <state key="normal" image="qqicon_login_profile_66x66_"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-xi-Z58">
-                            <rect key="frame" x="342" y="0.0" width="90" height="66"/>
+                            <rect key="frame" x="319.5" y="0.0" width="82.5" height="82.5"/>
                             <state key="normal" image="sinaicon_login_profile_66x66_"/>
                         </button>
                     </subviews>
@@ -123,14 +126,15 @@
                 <constraint firstAttribute="bottom" secondItem="ehM-gc-yF6" secondAttribute="bottom" id="Pow-dh-Zb0"/>
                 <constraint firstItem="pK4-Rt-edp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-20" id="faV-UU-Dy3"/>
                 <constraint firstAttribute="trailing" secondItem="pK4-Rt-edp" secondAttribute="trailing" id="gBw-IR-phs"/>
-                <constraint firstAttribute="trailing" secondItem="7QN-mN-FKV" secondAttribute="trailing" id="nEs-F4-NgR"/>
+                <constraint firstAttribute="trailing" secondItem="7QN-mN-FKV" secondAttribute="trailing" constant="15" id="nEs-F4-NgR"/>
                 <constraint firstAttribute="trailing" secondItem="ehM-gc-yF6" secondAttribute="trailing" id="qJW-Qd-abm"/>
-                <constraint firstItem="7QN-mN-FKV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s7L-E2-Cvf"/>
+                <constraint firstItem="7QN-mN-FKV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="s7L-E2-Cvf"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bgImageView" destination="pK4-Rt-edp" id="NOl-U7-dDS"/>
+                <outlet property="bgImageViewConstraintTopY" destination="faV-UU-Dy3" id="YKc-L7-l2o"/>
                 <outlet property="bottomView" destination="ehM-gc-yF6" id="oNC-Qk-vbI"/>
                 <outlet property="dayOrNightButton" destination="ien-mo-j1G" id="7TF-EN-o2H"/>
                 <outlet property="favoriteButton" destination="6DW-cy-HUp" id="BJ4-gm-iUy"/>

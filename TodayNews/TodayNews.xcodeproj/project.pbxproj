@@ -14,13 +14,19 @@
 		9605C69822DDD4490094294D /* SwiftTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605C69722DDD4490094294D /* SwiftTheme.swift */; };
 		9605C69B22DDD8200094294D /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9605C69A22DDD8200094294D /* default_theme.plist */; };
 		9605C69D22DDD82C0094294D /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9605C69C22DDD82C0094294D /* night_theme.plist */; };
+		96106D4722DEC2AB0007DBD7 /* MoreLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96106D4622DEC2AB0007DBD7 /* MoreLoginVC.swift */; };
+		96106D4922DEC2B60007DBD7 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96106D4822DEC2B60007DBD7 /* Mine.storyboard */; };
 		9660809322D825B3000EEB1A /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660809222D825B3000EEB1A /* NetworkTool.swift */; };
 		9660809522D82BA4000EEB1A /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660809422D82BA4000EEB1A /* MyCellModel.swift */; };
+		966587E622E9940200B601E9 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966587E522E9940200B601E9 /* SettingTableVC.swift */; };
+		966587E822E9968700B601E9 /* SettingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 966587E722E9968600B601E9 /* SettingPlist.plist */; };
+		966587EA22E9A50900B601E9 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966587E922E9A50900B601E9 /* SettingModel.swift */; };
+		966587ED22E9A85A00B601E9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966587EB22E9A85A00B601E9 /* SettingTableViewCell.swift */; };
+		966587EE22E9A85A00B601E9 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966587EC22E9A85A00B601E9 /* SettingTableViewCell.xib */; };
 		968FCDE822D6DFA000B9033C /* HandyJSONTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968FCDE722D6DFA000B9033C /* HandyJSONTestVC.swift */; };
 		96A1EE0C22D5C01E0090A15E /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1EE0B22D5C01E0090A15E /* BaseTabBar.swift */; };
 		96A1EE4B22D5DB750090A15E /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1EE4A22D5DB750090A15E /* Description.swift */; };
 		96A1EE4D22D5DBD40090A15E /* SwiftyJSONTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1EE4C22D5DBD40090A15E /* SwiftyJSONTestVC.swift */; };
-		96A1EE5022D5DE1B0090A15E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1EE4F22D5DE1B0090A15E /* UIColor+Extension.swift */; };
 		96E01B7D22D49A2E0050CCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01B7C22D49A2E0050CCAF /* AppDelegate.swift */; };
 		96E01B8222D49A2E0050CCAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E01B8022D49A2E0050CCAF /* Main.storyboard */; };
 		96E01B8422D49A2F0050CCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E01B8322D49A2F0050CCAF /* Assets.xcassets */; };
@@ -51,13 +57,19 @@
 		9605C69722DDD4490094294D /* SwiftTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTheme.swift; sourceTree = "<group>"; };
 		9605C69A22DDD8200094294D /* default_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		9605C69C22DDD82C0094294D /* night_theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
+		96106D4622DEC2AB0007DBD7 /* MoreLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginVC.swift; sourceTree = "<group>"; };
+		96106D4822DEC2B60007DBD7 /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		9660809222D825B3000EEB1A /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		9660809422D82BA4000EEB1A /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
+		966587E522E9940200B601E9 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
+		966587E722E9968600B601E9 /* SettingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingPlist.plist; sourceTree = "<group>"; };
+		966587E922E9A50900B601E9 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		966587EB22E9A85A00B601E9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		966587EC22E9A85A00B601E9 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		968FCDE722D6DFA000B9033C /* HandyJSONTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJSONTestVC.swift; sourceTree = "<group>"; };
 		96A1EE0B22D5C01E0090A15E /* BaseTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
 		96A1EE4A22D5DB750090A15E /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		96A1EE4C22D5DBD40090A15E /* SwiftyJSONTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONTestVC.swift; sourceTree = "<group>"; };
-		96A1EE4F22D5DE1B0090A15E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		96E01B7922D49A2E0050CCAF /* TodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E01B7C22D49A2E0050CCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E01B8122D49A2E0050CCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,7 +146,6 @@
 		96A1EE4E22D5DDF90090A15E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				96A1EE4F22D5DE1B0090A15E /* UIColor+Extension.swift */,
 				96FC150C22DC55A700A37808 /* CellXib+Extension.swift */,
 			);
 			path = Extension;
@@ -298,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				96E01BB122D4A3450050CCAF /* MineVC.swift */,
+				96106D4622DEC2AB0007DBD7 /* MoreLoginVC.swift */,
+				966587E522E9940200B601E9 /* SettingTableVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				9660809422D82BA4000EEB1A /* MyCellModel.swift */,
+				966587E922E9A50900B601E9 /* SettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +335,8 @@
 				9605C68D22DD5FA00094294D /* MyConcernCollectionViewCell.xib */,
 				9605C69122DDA39F0094294D /* NoLoginHeaderView.swift */,
 				9605C69322DDA3AA0094294D /* NoLoginHeaderView.xib */,
+				966587EB22E9A85A00B601E9 /* SettingTableViewCell.swift */,
+				966587EC22E9A85A00B601E9 /* SettingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +350,7 @@
 				96E01B8522D49A2F0050CCAF /* LaunchScreen.storyboard */,
 				96E01B8822D49A2F0050CCAF /* Info.plist */,
 				96E01B9022D49F710050CCAF /* MacroDefinition.swift */,
+				966587E722E9968600B601E9 /* SettingPlist.plist */,
 			);
 			name = "Support files";
 			sourceTree = "<group>";
@@ -341,6 +358,7 @@
 		96FC14FF22DC11B700A37808 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				96106D4822DEC2B60007DBD7 /* Mine.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -416,11 +434,14 @@
 			files = (
 				96E01B8722D49A2F0050CCAF /* LaunchScreen.storyboard in Resources */,
 				96E01B8422D49A2F0050CCAF /* Assets.xcassets in Resources */,
+				966587EE22E9A85A00B601E9 /* SettingTableViewCell.xib in Resources */,
 				96FC150522DC18CD00A37808 /* MineTableViewCell.xib in Resources */,
 				9605C68F22DD5FA00094294D /* MyConcernCollectionViewCell.xib in Resources */,
+				966587E822E9968700B601E9 /* SettingPlist.plist in Resources */,
 				9605C69B22DDD8200094294D /* default_theme.plist in Resources */,
 				96FC150922DC298F00A37808 /* MineFirstTableViewCell.xib in Resources */,
 				9605C69D22DDD82C0094294D /* night_theme.plist in Resources */,
+				96106D4922DEC2B60007DBD7 /* Mine.storyboard in Resources */,
 				96E01B8222D49A2E0050CCAF /* Main.storyboard in Resources */,
 				9605C69422DDA3AA0094294D /* NoLoginHeaderView.xib in Resources */,
 			);
@@ -545,15 +566,18 @@
 				9605C69222DDA39F0094294D /* NoLoginHeaderView.swift in Sources */,
 				96E01BAE22D4A3130050CCAF /* WatermelonVideoVC.swift in Sources */,
 				9660809322D825B3000EEB1A /* NetworkTool.swift in Sources */,
+				96106D4722DEC2AB0007DBD7 /* MoreLoginVC.swift in Sources */,
 				96A1EE0C22D5C01E0090A15E /* BaseTabBar.swift in Sources */,
 				9605C69822DDD4490094294D /* SwiftTheme.swift in Sources */,
+				966587ED22E9A85A00B601E9 /* SettingTableViewCell.swift in Sources */,
 				96E01BB822D4A3EC0050CCAF /* BaseTabBarController.swift in Sources */,
 				96FC150822DC298F00A37808 /* MineFirstTableViewCell.swift in Sources */,
+				966587E622E9940200B601E9 /* SettingTableVC.swift in Sources */,
 				96A1EE4D22D5DBD40090A15E /* SwiftyJSONTestVC.swift in Sources */,
 				96E01BB222D4A3450050CCAF /* MineVC.swift in Sources */,
-				96A1EE5022D5DE1B0090A15E /* UIColor+Extension.swift in Sources */,
 				96E01B9122D49F710050CCAF /* MacroDefinition.swift in Sources */,
 				96E01BB622D4A3C00050CCAF /* BaseViewController.swift in Sources */,
+				966587EA22E9A50900B601E9 /* SettingModel.swift in Sources */,
 				96E01BB022D4A32D0050CCAF /* ShortVideoVC.swift in Sources */,
 				96FC150D22DC55A700A37808 /* CellXib+Extension.swift in Sources */,
 				96E01B9622D4A1D60050CCAF /* HomePageVC.swift in Sources */,

@@ -10,6 +10,8 @@ import UIKit
 
 class BaseTabBarController: UITabBarController {
 
+    var bsTabBar: BaseTabBar = BaseTabBar()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +31,7 @@ class BaseTabBarController: UITabBarController {
         addChildVC(ShortVideoVC(), title: "小视频", imageName: "huoshan")
         addChildVC(MineVC(), title: "我的", imageName: "mine")
         
-        setValue(BaseTabBar(), forKey: "tabBar")
+        setValue(bsTabBar, forKey: "tabBar")
     }
     
     func addChildVC(_ childController: UIViewController, title: String, imageName: String) {
@@ -48,6 +50,7 @@ class BaseTabBarController: UITabBarController {
         let selected = notification.object as! Bool
         if selected {
             //设置为日间
+            bsTabBar.setNightBaseTabBar()
             for childController in children {
                 switch childController.title! {
                 case "首页":
@@ -66,6 +69,7 @@ class BaseTabBarController: UITabBarController {
             }
         }else {
             //设置为夜间
+            bsTabBar.setDayChildBaseTabBar()
             for childController in children {
                 switch childController.title! {
                 case "首页":

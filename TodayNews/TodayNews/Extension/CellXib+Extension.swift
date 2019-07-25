@@ -9,6 +9,18 @@
 
 import UIKit
 
+protocol StoryboardProtocol {
+    //不加方法，在其他地方调用协议扩展实现时，会有辅助提示：自动提示方法
+//    static func loadStoryboard(sbName: String, vcName: String) -> Self
+}
+
+extension StoryboardProtocol where Self: UIViewController {
+    static func loadStoryboard(sbName: String, vcName: String) -> Self {
+        let storyboard = UIStoryboard(name: sbName, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: vcName) as! Self
+    }
+}
+
 protocol RegisterCellOrNib {
     static var identifier: String { get }
     static var nib: UINib? { get }

@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class MineVC: UITableViewController {
    
+    private let disposeBag = DisposeBag()
+    
     /// 存储 cell的数据
     var dataSource = [[MyCellModel]]()
     /// 存储我的关注数据
@@ -65,6 +69,14 @@ class MineVC: UITableViewController {
                 self.tableView.reloadSections(IndexSet(integer: 0), with: UITableView.RowAnimation.automatic)
             })
         }
+        
+        /// 更多按钮点击
+        headerView.moreLoginButton.rx.tap.subscribe(onNext: { [weak self] in
+//            let moreLoginVC = MoreLoginVC.loadStoryboard(sbName: "String", vcName: "String")
+            let moreLoginVC = MoreLoginVC.loadStoryboard(sbName: "Mine", vcName: String(describing: MoreLoginVC.self))
+            moreLoginVC.modalSize = (width: .full, height: .custom(size: Float(SCREEN_HEIGHT - (is_iPhoneX ? 44 : 40))))
+            self?.present(moreLoginVC, animated: true, completion: nil)
+        }).disposed(by: disposeBag)
     }
     
     override func didReceiveMemoryWarning() {
@@ -138,9 +150,14 @@ extension MineVC {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.section == 3 && indexPath.row == 1 {
-            self.navigationController?.pushViewController(HigherOrderFunctionTestVC(), animated: true)
+        if indexPath.section == 3 {
+            if indexPath.row == 0 {
+                self.navigationController?.pushViewController(HigherOrderFunctionTestVC(), animated: true)
+            }else if indexPath.row == 1 {
+                navigationController?.pushViewController(SettingTableVC(), animated: true)
+            }
         }
+            
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
